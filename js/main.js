@@ -34,7 +34,7 @@ window.addEventListener('scroll', _.throttle(function() {
     // 버튼 보이기
     gsap.to(toTopEl, 0.2, {
       x: 1
-    });
+    }); 
 
 
   } else {
