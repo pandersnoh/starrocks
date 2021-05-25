@@ -38,7 +38,6 @@ window.addEventListener('scroll', _.throttle(function() {
 
 
   } else {
-    headerEl.classList.remove('header-fix');
     // 배지 보이기
     gsap.to(badgeEl, 0.5, {
       opacity: 1,
@@ -55,6 +54,7 @@ window.addEventListener('scroll', _.throttle(function() {
       backgroundColor: 'rgba(246, 245, 240, 0.7)'
     });
   } else {
+    headerEl.classList.remove('header-fix');
     gsap.to(headerEl, 0.5, {
       backgroundColor: 'rgba(246, 245, 240, 1)'
     });    
