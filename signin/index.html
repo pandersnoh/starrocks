@@ -25,13 +25,14 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="../css/reset.min.css" /> 
   <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/signin.css" />
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js" integrity="sha512-kSI9CgGh60rJbNVeMJvfNX0UTKAq8LEOea/yKJQbFpIroxT7bf9/zUFXbnfsQP5F6xlOOHtCfBPgsE1ceiHnRw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
   <script defer src="../js/common.js"></script>  
 </head>
-<body style="height:3000px;">
+<body>
   <!-- HEADER -->
   <header>
     <div class="inner">
@@ -354,7 +355,24 @@
   </header>
   <!-- SIGNIN -->
   <section class="signin">
-
+    <h1>로그인</h1>
+    <div class="signin__card">
+      <h2><strong>Welcome!</strong> 스타록스에 오신 것을 환영합니다.</h2>
+      <form>
+        <input type="text" placeholder="아이디를 입력하세요." />
+        <input type="password" placeholder="비밀번호를 입력하세요." />
+        <input type="submit" value="로그인" />
+        <p>
+          * 비밀번호를 타 사이트와 같이 사용할 경우 도용 위험이 있으니,<br />
+          정기적으로 비밀번호를 변경하세요!
+        </p>
+      </form>
+      <div class="actions">
+        <a href="javascript:void(0)">회원가입</a>
+        <a href="javascript:void(0)">아이디 찾기</a>
+        <a href="javascript:void(0)">비밀번호 찾기</a>
+      </div>
+    </div>
   </section>
   <!-- SIGNIN -->
   <!-- FOOTER -->
