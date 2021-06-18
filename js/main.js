@@ -71,13 +71,14 @@ toTopEl.addEventListener('click', function(){
 
 // Visual 애니메이션 제어
 const fadeEls = document.querySelectorAll('.visual .fade-in');
-fadeEls.forEach(function (fadeEl, index) {
-  // gsap.to(요소, 지속시간, 옵션)  
-  gsap.to(fadeEl, 1, {
-    delay: (index + 1) * 0.7, // 0.7초, 1.4초, 2.1초, 2.8초 뒤에 순차적으로 재생
+
+for(let i=0; i<fadeEls.length; i++) {
+  gsap.to(fadeEls[i], 1, {
+    delay: (i + 1) * 0.7, // 0.7초, 1.4초, 2.1초, 2.8초 뒤에 순차적으로 재생
     opacity: 1
   });
-});
+}
+
 
 // 공지사항 swiper
 // new Swiper (선택자, 옵션)
@@ -160,7 +161,8 @@ floatingObject('.floating3', 1.5, 20);
 
 // 스크롤 매직 (스크롤 위치 계산 애니메이션)
 const spyEls = document.querySelectorAll('section.scroll-spy');
-spyEls.forEach(function(spyEl) {
+
+Array.prototype.forEach.call(spyEls, function(spyEl) {
   new ScrollMagic
   .Scene({
       triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
