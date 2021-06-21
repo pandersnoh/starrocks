@@ -23,8 +23,8 @@ const badgeEl = document.querySelector('header .badges');
 const toTopEl = document.querySelector('#to-top');
 
 window.addEventListener('scroll', _.throttle(function() {
-  console.log(window.scrollY);
-  if(window.scrollY > 500) {
+  console.log(window.pageYOffset);
+  if(window.pageYOffset > 500) {
     // 배지 숨기기
     // gsap.to(요소, 지속시간, 옵션)
     gsap.to(badgeEl, 0.5, {
