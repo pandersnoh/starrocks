@@ -1,7 +1,7 @@
 // 검색창 기능 제어
 const searchEl = document.querySelector('.search');
 const searchInputEl = searchEl.querySelector('input');
-const memberMenu = document.querySelector('menu');
+const memberMenu = document.querySelector('.menu');
 
 searchEl.addEventListener('click', function() {
   searchInputEl.focus();
