@@ -9,7 +9,7 @@ searchEl.addEventListener('click', function() {
 });
 
 searchInputEl.addEventListener('focus', function() { // input 요소에 마우스 포커스 되면 실행
-  if(headerEl.classList.contains('header-fix') {	
+  if(headerEl.classList.contains('header-fix')) {	
 	memberMenu.classList.add('hidden');
   }
   searchEl.classList.add('focused');
@@ -17,7 +17,7 @@ searchInputEl.addEventListener('focus', function() { // input 요소에 마우�
 });
 
 searchInputEl.addEventListener('blur', function() { // input 요소에 마우스 포커스 해제하면 실행
-  if(headerEl.classList.contains('header-fix') {	
+  if(headerEl.classList.contains('header-fix')) {	
     memberMenu.classList.remove('hidden');
   }
   searchEl.classList.remove('focused');
