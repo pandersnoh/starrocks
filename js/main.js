@@ -1,17 +1,20 @@
 // 검색창 기능 제어
 const searchEl = document.querySelector('.search');
 const searchInputEl = searchEl.querySelector('input');
+const memberMenu = document.querySelector('menu');
 
 searchEl.addEventListener('click', function() {
   searchInputEl.focus();
 });
 
 searchInputEl.addEventListener('focus', function() { // input 요소에 마우스 포커스 되면 실행
+  memberMenu.classList.add('hidden');
   searchEl.classList.add('focused');
   searchInputEl.setAttribute('placeholder', '통합검색');
 });
 
 searchInputEl.addEventListener('blur', function() { // input 요소에 마우스 포커스 해제하면 실행
+  memberMenu.classList.remove('hidden');
   searchEl.classList.remove('focused');
   searchInputEl.setAttribute('placeholder', '');
   searchInputEl.value = '';

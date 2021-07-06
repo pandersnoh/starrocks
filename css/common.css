@@ -142,6 +142,10 @@ header .sub-menu {
 }
 header .sub-menu ul.menu {
   display: flex;
+  transition: opacity .3s;
+}
+header .sub-menu ul.menu.hidden {
+  opacity: 0;
 }
 header .sub-menu ul.menu li {
   position: relative;  
