@@ -169,12 +169,37 @@ header .badges .badge {
   margin-left: calc((819px * 3 + 20px) / -2);
 }
 .notice .promotion .swiper-slide {
+  height: 553px;
   opacity: 0.2;
   transition: opacity 1s;
   position: relative;
 }
 .notice .promotion .swiper-slide-active {
   opacity: 1;
+}
+.notice .promotion .swiper-slide .promotion-text {
+  font-size: 28px;
+  letter-spacing: -0.04em;
+  margin-top: 20px;
+}
+.notice .promotion .swiper-slide .promotion-text strong {
+  font-weight: bold;
+}
+.notice .promotion .swiper-slide .promotion-text strong.brown {
+  color: #63392d;
+}
+.notice .promotion .swiper-slide .promotion-text strong.violet {
+  color: #a30967;
+}
+.notice .promotion .swiper-slide .promotion-text dt {
+  margin-bottom: 12px;
+  line-height: 125%;
+  font-weight: normal;
+}
+.notice .promotion .swiper-slide .promotion-text dd {
+  font-size: 18px;
+  font-weight: normal;
+  color: #666;
 }
 .notice .promotion .swiper-slide .btn {
   position: absolute;
@@ -252,9 +277,31 @@ header .badges .badge {
   right: 0;  
 }
 .rewards .inner {
-  background-image: url("../images/rewards.jpg");
+  background-image: url("../images/starrocks_rewards.jpg");
   background-repeat: no-repeat;
   height: 241px;
+}
+.rewards .text-group {
+  position: absolute;
+  top: 40px;
+  left: 350px;
+  letter-spacing: -0.02em;
+}
+.rewards .text-group strong {
+  font-size: 24px;  
+  font-weight: normal;
+  display: block;
+  margin-bottom: 4px;
+  letter-spacing: -0.05em;
+  color: #353334;
+}
+.rewards .text-group strong b {
+  font-weight: bold;
+  color: #000;
+}
+.rewards .text-group p {
+  font-size: 14px;
+  color: #676566;
 }
 .rewards .btn-group {
   position: absolute;
@@ -348,9 +395,15 @@ header .badges .badge {
 }
 .season-product .text-group .title {
   margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 30px;
+}
+.season-product .text-group .title strong {
+  font-weight: bold;
 }
 .season-product .text-group .description {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  color: #777;
 }
 .season-product .text-group .more {
 
@@ -373,6 +426,20 @@ header .badges .badge {
   top: 124px;
   left: 208px;
 }
+.reserve-coffee .text-group .description {
+  margin-bottom: 20px;
+}
+.reserve-coffee .text-group .description strong {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 12px;
+  display: block;
+  font-weight: bold;
+  color: #fff;
+}
+.reserve-coffee .text-group .description p {
+  color: #d9aa8a;
+}
 .reserve-coffee .product {
   position: absolute;
   top: 0;
@@ -381,7 +448,7 @@ header .badges .badge {
 
 /* PICK UR FAVORITE */
 .pick-your-favorite {
-  background-image: url("../images/favorite_bg.jpg");
+  background-image: url("../images/starrocks_favorite_bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed; /* fixed하여 Parallax - 시간차 애니메이션 효과 구현 */
@@ -402,6 +469,20 @@ header .badges .badge {
 }
 .pick-your-favorite .text-group .description  {
   margin-bottom: 40px;
+  text-align: right;
+  color: #fff;
+}
+.pick-your-favorite .text-group .description strong {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 12px;
+  display: block;
+  font-weight: bold;
+}
+.pick-your-favorite .text-group .description p {
+  font-size: 15px;
+  letter-spacing: -0.05em;
+  color: #ccc;
 }
 
 /* RESERVE STORE */
@@ -487,9 +568,17 @@ header .badges .badge {
 }
 .find-store .text-group .title {
   margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 12px;
+  display: block;
+  font-weight: bold;  
 }
 .find-store .text-group .description {
   margin-bottom: 20px;
+  font-size: 15px;
+  letter-spacing: -0.05em;
+  color: #666;  
 }
 
 /* AWARDS */

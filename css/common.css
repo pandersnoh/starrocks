@@ -118,8 +118,8 @@ header.header-fix > .inner {
   height: 53px;
 }
 header .logo {
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -127,6 +127,10 @@ header .logo {
   margin: auto;
   transition: opacity 0.3s;
   opacity: 1;
+  background-image: url('../images/starrocks_logo.png');
+  background-repeat: no-repeat;
+  background-size: 100px;
+  text-indent: -1000em;
 }
 header.header-fix .logo {
   opacity: 0;
