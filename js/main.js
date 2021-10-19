@@ -57,14 +57,8 @@ window.addEventListener('scroll', _.throttle(function() {
   }
   if(window.scrollY > 140) { // header 메뉴 배경색 반투명처리
     headerEl.classList.add('header-fix');
-    gsap.to(headerEl, 0.5, {
-      backgroundColor: 'rgba(246, 245, 240, 0.7)'
-    });
   } else {
-    headerEl.classList.remove('header-fix');
-    gsap.to(headerEl, 0.5, {
-      backgroundColor: 'rgba(246, 245, 240, 1)'
-    });    
+    headerEl.classList.remove('header-fix');  
   }
 }, 300)); 
 // 화면 스크롤 시 0.3초 단위로 부하를 줘서 함수가 과도하게 실행되는 것을 막아줌
@@ -182,3 +176,39 @@ Array.prototype.forEach.call(spyEls, function(spyEl) {
 // 카피라이트 연도 처리 (올해 연도 표기)
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear(); 
+
+const mnav_submenu1 = document.querySelector('.submenu1 > dt');
+const mnav_submenu2 = document.querySelector('.submenu2 > dt');
+const mnav = document.querySelector('.mobileGnb_wrap');
+let mnav1_open = false;
+let mnav2_open = false;
+
+$('.submenu1 > .submenu_dt').click(function() {
+  if( $(this).next().css("display") == "none" )  {
+    $('.submenu1 dd').slideUp("slow");
+    $(this).siblings('dd').slideDown("slow");
+  }
+  else {
+    $(this).siblings('dd').slideUp("slow");
+  }
+});
+
+$('.submenu2 > .submenu_dt').click(function() {
+  if( $(this).next().css("display") == "none" )  {
+    $('.submenu2 dd').slideUp("slow");
+    $(this).siblings('dd').slideDown("slow");
+  }
+  else {
+    $(this).siblings('dd').slideUp("slow");
+  }
+});
+
+$('.open_nav').click(function() {
+  $('.mobileGnb_wrap').animate({ "right":"0"});
+  $('.mobile_dimm').fadeIn(300);
+});
+
+$('.mobileGnb_close').click(function() {
+  $('.mobileGnb_wrap').animate({ "right":"-100%"});
+  $('.mobile_dimm').fadeOut(300);
+});

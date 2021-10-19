@@ -21,14 +21,8 @@ const headerEl = document.querySelector('header');
 window.addEventListener('scroll', _.throttle(function() {
   if(window.scrollY > 140) { // header 메뉴 배경색 반투명처리
     headerEl.classList.add('header-fix');
-    gsap.to(headerEl, 0.5, {
-      backgroundColor: 'rgba(246, 245, 240, 0.7)'
-    });
   } else {
     headerEl.classList.remove('header-fix');    
-    gsap.to(headerEl, 0.5, {
-      backgroundColor: 'rgba(246, 245, 240, 1)'
-    });    
   }
 }, 300)); 
 // 화면 스크롤 시 0.3초 단위로 부하를 줘서 함수가 과도하게 실행되는 것을 막아줌
@@ -38,3 +32,4 @@ window.addEventListener('scroll', _.throttle(function() {
 // 카피라이트 연도 처리 (올해 연도 표기)
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear(); 
+
