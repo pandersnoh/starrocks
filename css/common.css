@@ -110,11 +110,11 @@ header {
   width: 100%;
   z-index: 99999;
 }
-header .desktopGnb .inner {
+header > .desktopGnb > .inner {
   height: 110px;
   transition: height 0.3s;
 }
-header.header-fix .desktopGnb .inner {
+header.header-fix > .desktopGnb > .inner {
   height: 53px;
 }
 header .logo {
@@ -387,7 +387,65 @@ footer .copyright .this-year {
 footer .logo {
   margin: 30px auto 0;
 }
-
+@media (max-width: 1220px) {
+  .inner {
+    width: 100%;
+  }
+  header.header-fix .sub-menu {
+    display: none;
+  }
+  header .desktopGnb {
+    width: 100%;
+  }
+  header > .desktopGnb > .inner {
+    width: 100%;
+  }
+  header.header-fix .main-menu {
+    width: 100%;
+  }
+  header.header-fix .main-menu .item {
+    width: 20%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  header.header-fix .main-menu .item .item__name {
+    font-size: 12px;
+    text-align: center;
+  }
+  header .main-menu .item .item__contents {
+    top: 54px;
+  }
+  header .main-menu .item:hover {
+    background-color: #2c2a29;
+  }
+  header .main-menu .item:hover .item__name {
+    border-radius: 0px;
+  }
+  header .sub-menu {
+    right: 20px;
+  }
+  header .main-menu .item .item__contents .contents__menu {
+    padding: 0 60px;
+  }
+  header .main-menu .item .item__contents .contents__menu .inner {
+    width: 100%;
+  }  
+  header .main-menu .item .item__contents .contents__texture {
+    padding: 20px;
+  }
+  .notice .notice-line .inner .inner__left,
+  .notice .notice-line .inner .inner__right {
+    width: 50% !important;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .notice .notice-line .inner .inner__right {
+    justify-content: center !important;
+  }
+}
 @media (max-width: 768px) {
   header {
     position: unset !important;
@@ -405,16 +463,19 @@ footer .logo {
   header .mobileGnb .top {
     position: relative;
     width: auto;
+    padding: 10px 0;
   }  
   header .mobileGnb .top .logo {
     width: 60px;
     height: 60px;
     background-size: cover;
     margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }  
   header .mobileGnb .top .open_nav {
     position: absolute;
-    top: 22%;
+    top: 25%;
     right: 10px;
   }
   header .mobileGnb .top .open_nav span {
@@ -521,6 +582,12 @@ footer .logo {
   .visual .title img {
     width: 100%;
   }
+  .visual .title .btn {
+    bottom: -50% !important;
+    height: 45px;
+    left: 28% !important;
+    top: unset !important;
+  }
   .visual .cup1.image {
     top: 50%;
     left: 10% !important;
@@ -558,8 +625,8 @@ footer .logo {
     justify-content: center !important;
   }
   .notice .notice-line .inner .inner__left h2 {
-    padding-left: 20px;
     width: 18%;
+    font-size: 14px !important;
   }
   .notice .promotion .swiper-slide {
     height: 520px !important;
@@ -569,6 +636,9 @@ footer .logo {
   }
   .notice .notice-line .inner .inner__left .swiper-slide a {
     font-size: 14px;
+  }
+  .notice .notice-line .inner .inner__right .toggle-promotion {
+    width: 42px !important;
   }
   .rewards .inner {
     height: 100% !important;
