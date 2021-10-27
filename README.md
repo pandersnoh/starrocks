@@ -6,6 +6,7 @@
 구현결과 : https://youthful-dijkstra-be566a.netlify.app/
 
 ## 작업개요
+- 제작년도 : 2021년
 - 활용언어 : HTML5, CSS3, JavaScript, jQuery
 - 제작목적 : 포트폴리오
 - 제작사항 : HTML5 시멘틱 마크업, CSS와 JavaScript를 이용한 모션효과 구현, Swiper 슬라이드로 배너 리스트 구현
